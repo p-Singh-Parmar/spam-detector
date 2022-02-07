@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <div id="brandname">
+            ML APP
+        </div>
+        <h2>Spam Detector for SMS</h2>
+        </div>
+    </header>
+    <p style="color:blue; font-size: 20; text-align:center">Results for comments</b></p>
+    <div class="results">
+
+        {% if predictions==1%}
+        <h2 style="color:red">Spam</h2>
+        {% elif predictions==0%}
+        <h2 style="color:greenyellow">Not Spam</h2>
+        {%endif%}
+    </div>
+    
+</body>
+</html>
